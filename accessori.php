@@ -21,7 +21,7 @@ class Accessori extends Prodotto{
     {
     $this->materiale = $materiale;
     $this->dimensioni = $dimensioni;
-    parent::__construct($immagine,$nome,$prezzo,$category);
+    parent::__construct($immagine, $nome, $prezzo, $category);
 
   }
 

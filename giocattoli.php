@@ -21,7 +21,7 @@ class Giocattoli extends Prodotto {
     {
     $this->caratteristiche = $caratteristiche;
     $this->dimensioni = $dimensioni;
-    parent::__construct($immagine,$nome,$prezzo,$category);
+    parent::__construct($immagine, $nome, $prezzo, $category);
 
   }
 
