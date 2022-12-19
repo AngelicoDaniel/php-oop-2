@@ -11,7 +11,6 @@ $arrCategory = [
     'gatto' => new Category ('gatto', 'icona_gatto')
 ];
 
-var_dump($arrCategory);
 
 $arrProdotti = [
     new Cibo('https://picsum.photos/200/300', 'Royal Canin', 43.99, $arrCategory['cane'], 545, 'prosciutto, riso' ),
@@ -20,15 +19,17 @@ $arrProdotti = [
     new Giocattoli('https://picsum.photos/200/300', 'Topini di peluche Trixie', 4.99, $arrCategory['gatto'], 'Morbido con codina in corda', '8,5 x 10 cm' ),  
 ];
 
-var_dump($arrProdotti);
-
-// var_dump($arrCategory);
-// var_dump($arrProdotti);
-
-
 foreach ($arrProdotti as $elem) {
-    var_dump($elem);
-    
+    // var_dump($elem);
+    echo '<img src="$elem->immagine " alt="">';
+    echo '<br>';
+    echo $elem->nome;
+    echo '<br>';
+    echo $elem->category->nome;
+    echo '<br>';
+    echo $elem->category->icona;
+
+
 }
 
 
