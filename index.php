@@ -29,25 +29,25 @@ $arrProdotti = [
 //     echo '<br>';
 //     echo $elem->category->icona;
 
-//     // if(get_class($elem) == 'Cibo' ){
-//     //     echo '<br>';
-//     //     echo $elem->peso;
-//     //     echo '<br>';
-//     //     echo $elem->ingredienti;
-//     // }
+    // if(get_class($elem) == 'Cibo' ){
+    //     echo '<br>';
+    //     echo $elem->peso;
+    //     echo '<br>';
+    //     echo $elem->ingredienti;
+    // }
     
-//     // if(get_class($elem) == 'Accessori' ){
-//     //     echo '<br>';
-//     //     echo $elem->materiale;
-//     //     echo '<br>';
-//     //     echo $elem->dimensioni;
-//     // }
-//     // if(get_class($elem) == 'Giocattoli' ){
-//     //     echo '<br>';
-//     //     echo $elem->caratteristiche;
-//     //     echo '<br>';
-//     //     echo $elem->dimensioni;
-//     // }
+    // if(get_class($elem) == 'Accessori' ){
+    //     echo '<br>';
+    //     echo $elem->materiale;
+    //     echo '<br>';
+    //     echo $elem->dimensioni;
+    // }
+    // if(get_class($elem) == 'Giocattoli' ){
+    //     echo '<br>';
+    //     echo $elem->caratteristiche;
+    //     echo '<br>';
+    //     echo $elem->dimensioni;
+    // }
 // }
 ?>
 <!doctype html>
@@ -81,8 +81,32 @@ $arrProdotti = [
                   <div class="card-body">
                    <h5 class="card-title"><?php echo $elem->nome ?> </h5>
                   <p class="card-text  ">Prezzo: €<?php echo $elem->prezzo ?></p>
-                  <p class="card-text"><?php echo $elem->category->icona . $elem->category->nome ?></p>
-                  <!-- <p class="card-text"><?php echo $elem->dimensioni?></p> -->
+                  <p class="card-text"><?php echo $elem->category->icona?></p>
+                  <p class="card-text"><?php echo $elem->category->nome ?> </p>
+                  <?php 
+                        if(get_class($elem) == 'Cibo' ){
+                        echo '<br>';
+                        echo $elem->peso;
+                        echo '<br>';
+                        echo $elem->ingredienti;
+                    }
+                    
+                    if(get_class($elem) == 'Accessori' ){
+                        echo '<br>';
+                        echo $elem->materiale;
+                        echo '<br>';
+                        echo $elem->dimensioni;
+                    }
+                    if(get_class($elem) == 'Giocattoli' ){
+                        echo '<br>';
+                        echo $elem->caratteristiche;
+                        echo '<br>';
+                        echo $elem->dimensioni;
+                    }
+                                
+                ?>
+
+                                
                  </div>
                 </div>
             </div>
