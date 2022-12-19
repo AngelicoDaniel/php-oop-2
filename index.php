@@ -67,7 +67,7 @@ $arrProdotti = [
 
 <body>
   <header>
-    <!-- place navbar here -->
+
   </header>
   <main>
 
@@ -75,8 +75,8 @@ $arrProdotti = [
     <div class="row w-75 g-2 m-auto">
        
             <?php foreach ($arrProdotti as $elem){?>
-            <div class="col mt-4">    
-                <div class="card" style="width: 18rem; height: 25rem;">
+            <div class="col m-4">    
+                <div class="card" style="width: 18rem">
                   <img src="<?php echo $elem->immagine ?>"  class="card-img-top" alt="...">
                   <div class="card-body">
                    <h5 class="card-title"><?php echo $elem->nome ?> </h5>
